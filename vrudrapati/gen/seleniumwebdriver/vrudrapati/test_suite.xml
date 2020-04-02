@@ -1,0 +1,242 @@
+<!--Test_suite xml for running testng test-->
+<suite name="google" verbose="3">
+	<parameter name="selenium.host" value="localhost"></parameter>
+	<parameter name="selenium.port" value="4444"></parameter>
+	<parameter name="selenium.browser" value="*googleChrome"></parameter>
+	<parameter name="selenium.url" value="http://www.google.com"></parameter>
+	<test name="name2" preserve-order="true">
+		<classes><class name="com.vrudrapati.TS_ClientProfile">
+				<methods>
+					<include name="tc_ClientProfile"></include>
+					<include name="tc_EditingClientProfile"></include>
+					<include name="tc_EditChannelFeedDashboard"></include>
+					<include name="tc_SearchAvailableProgramsForDealOffer"></include>
+				</methods>
+			</class><class name="com.vrudrapati.TS_BaseRegressionGPS">
+				<methods>
+					<include name="tc_DisplaythenonmandatoryfieldsforDealInfoinFormatDeal"></include>
+					<include name="tc_AddnewProgrammingCategoryfieldtoSalesSummaryreportexport"></include>
+					<include name="tc_Mandatoryfieldsifrecoupableallowanceischecked"></include>
+					<include name="tc_Mandatoryfieldsifextensionischecked"></include>
+					<include name="tc_NonMandatoryfieldsinOptionsection"></include>
+					<include name="tc_MandatoryfieldsifOptionischecked"></include>
+					<include name="tc_VerifySaveandSharedthefulfillmentreportusingnewlyaddedfieldProgrammingcategory"></include>
+					<include name="tc_NavigationforFormatdealreport"></include>
+					<include name="tc_CheckifuserunabletologintosalessitewhentheaccessisrevokedfromGPS"></include>
+					<include name="tc_NewfiltercriteriaProgramIDaddedtoFulfillmentRejectionReport"></include>
+					<include name="tc_VerifyAvailStartDateisbeforeAvailenddateofmultiplewindowsdealoffersavedsearches"></include>
+					<include name="tc_ContractnumberfiltercolumnaddedtotheFulfillmentreportbuilder"></include>
+					<include name="tc_Verififassignmentdataisdisplayedassignmenttabprogramhaving2pieces"></include>
+					<include name="tc_Verififassignmentdataisdisplayedassignmenttabprogramhaving1piece"></include>
+					<include name="tc_Keywordsfltercolumnaddedtotheprogramreportbuilder"></include>
+					<include name="tc_AbletosavetheFormatDealreportasasharedreport"></include>
+					<include name="tc_VerifyLanguageBuybackRequestform"></include>
+					<include name="tc_FulfillmentreportwithContractnumberandDealidfieldsworksinMyreportandsharedreport"></include>
+					<include name="tc_RequestBuybackbuttonaddedtoDealOffersearchresultspage"></include>
+					<include name="tc_ContractnumbergeneratedifEdSalesDigitalDealiscreated"></include>
+					<include name="tc_Keywordsfiltercolumnablesearchatleastonewordinprogramreportbuilder"></include>
+					<include name="tc_ChecktheUSPremiereDatefieldisaddedtoEditProgrampage"></include>
+					<include name="tc_ContractnumbergeneratedifEdSalesDigitalOutputDealiscreated"></include>
+					<include name="tc_ContractnumbergeneratedifNonLinearDealiscreated"></include>
+					<include name="tc_CheckthenewfieldsareaddedtoProgramDetailpageinInternationalDivision"></include>
+					<include name="tc_ContractnumbergeneratedifNonLinearOutputDealiscreated"></include>
+					<include name="tc_PrimaryTerritoryCurrencyCodeExchangerateJaguarContractStatusinDealinfosection"></include>
+					<include name="tc_ChecktheTagsfieldisabletoselectmultipletagsinprogramsearchpageofNonLineardivision"></include>
+					<include name="tc_VerifyRunfulfillmentreportusingnewlyaddedProgrammingCategoryfield"></include>
+					<include name="tc_DatecreatedshouldbedisplayedinUTCtiming"></include>
+					<include name="tc_ContractNumberinDbwhenoptiontoextendischeckedforformatdeal"></include>
+					<include name="tc_ChecktheKeywordfieldisabletodisplaytheresult"></include>
+				</methods>
+			</class><class name="com.vrudrapati.TS_Deal">
+				<methods>
+					<include name="tc_DateRangePartialAvailability"></include>
+					<include name="tc_VerifyOrderHistoryPage"></include>
+					<include name="tc_VerifyIfAOrderWithLotOfProgramsIsLoaded"></include>
+					<include name="tc_VerifyUpdateOrderStatus"></include>
+					<include name="tc_OrderPriceCalculationBasedOnTieredPricing"></include>
+					<include name="tc_VerifyOrderDetailsScreen"></include>
+					<include name="tc_SearchOrderDetailsScreenWithAChannel"></include>
+					<include name="tc_BulkUpdateOfOrder_MultipleFields"></include>
+					<include name="tc_DealDNAExport"></include>
+					<include name="tc_ViewOrderDetails"></include>
+					<include name="tc_ViewSearchResultForOrderSearch"></include>
+					<include name="tc_Search_MiniPanelDetails"></include>
+					<include name="tc_AddingDealRights"></include>
+					<include name="tc_ProgramSoldExclusivelyWhenSearchingNonExclusive"></include>
+					<include name="tc_ProgramSoldExclusivelyWhen_SearchingExclusive"></include>
+					<include name="tc_PartialAvailabilityAvailabilityPeriodExtendsPastLicensePeriod"></include>
+					<include name="tc_MultipleWindowsAvailabilityPeriodStartsPriorToLicensePeriod"></include>
+					<include name="tc_ProgramAvailabilityWithNoMediaLinearOrRetransRightsCriteriaMultipleWindows"></include>
+					<include name="tc_MultipleMediaRights"></include>
+					<include name="tc_TerritoryAvailabilityFirstRunSearchWhereProgramHasNotBeenSoldInTheTerritory"></include>
+					<include name="tc_TerritoryRightIsPartOfProgramsRights"></include>
+					<include name="tc_AcquisitionStartDateAndEndDate"></include>
+					<include name="tc_AvailabilityExclusivity"></include>
+					<include name="tc_AvailabilityNonExclusivity"></include>
+					<include name="tc_OrderIsSearchableInFulfillmentOnlyOnceItIsMarkedAsFulfillmentYes"></include>
+					<include name="tc_DealOfferFeedback"></include>
+					<include name="tc_ExportAllProgramsButtonInDealOffer"></include>
+					<include name="tc_PlacingOfMultipleOrdersForA_CPOD"></include>
+					<include name="tc_DisplayOfOrdersTabAndOrderDetails"></include>
+					<include name="tc_VerifyDealOfferResultsAvailabilityForDifferentSearchCriteria"></include>
+					<include name="tc_VerifyIfEditProgramScreenLoads"></include>
+					<include name="tc_ContractNumberIsCreatedUpOnSendingPSDealToJaguar"></include>
+					<include name="tc_OrderIsDefaultedToCurrentTermYearOnPlacingItNewly"></include>
+					<include name="tc_TheOldOrderShowsTheCurrentTermYear"></include>
+					<include name="tc_OrderStatusOnPlacingAOrder"></include>
+					<include name="tc_BulkUpdateOfOrder"></include>
+					<include name="tc_TieredPricingTabScreens"></include>
+					<include name="tc_ExpiredDateDiffersBetweenTerritoriesMinExpirationDateDisplayDifferentlyBetweenTwoSearchResults"></include>
+					<include name="tc_FilterByAlternateVersionInclusionAndExclusion"></include>
+					<include name="tc_CreatePitchList"></include>
+					<include name="tc_VerifyDealOfferResultsAvailabilityForDifferentScenario"></include>
+					<include name="tc_AvailabilityWhenTheDateRangeIsOutsideTheOrderedLicenseEndDate"></include>
+					<include name="tc_DealCreationForAllDealTypes"></include>
+					<include name="tc_CheckWhenAProgramDoesNotHaveWordlwideRightsAndSearchAtASeriesLevel"></include>
+					<include name="tc_FilterByCollectionNameToRetainAvailability"></include>
+					<include name="tc_ExportAtAProgramAndSeasonLevel"></include>
+					<include name="tc_AnOrderIsPlacedAutomaticallyOnSendaPSOrDSDealToJaguar"></include>
+					<include name="tc_FillSearchRightsAndMetadataDetailsAndVerifyResult"></include>
+					<include name="tc_FilterByCategoryToRetainAvailability"></include>
+					<include name="tc_AvailabilityWhenTheDateRangeIsWithinTheOrderedLicenseEndDate"></include>
+					<include name="tc_VerifywhetherthefieldProductionTypeisaddedunderprogramdetailspage"></include>
+					<include name="tc_displaythefieldsforDealInfoinFormatDeal"></include>
+					<include name="tc_verifytheFieldProductionTypeisaddedintheProgramreportunderReportBuilder"></include>
+					<include name="tc_USPremiereDateReleaseDatefieldsinESTandUTCformat"></include>
+					<include name="tc_VerifyIfUpdatinganorderstatusinDMCcheckOrderdetailstatusupdatedinGPS"></include>
+					<include name="tc_VerifyRemovinginSalessiteURLinDealofferprogramlevelexports"></include>
+					<include name="tc_URLverificationinscreenerlinkscolumnatprogramleveldealofferexport"></include>
+				</methods>
+			</class><class name="com.vrudrapati.TS_Fulfillment">
+				<methods>
+					<include name="tc_ContractIdFieldVerification"></include>
+					<include name="tc_ChannelSearchFieldVerification"></include>
+					<include name="tc_OrderDetailStatusWhileRequestingFulfillment"></include>
+					<include name="tc_OrderDetailStatusForVariousStagesOfFulfillment"></include>
+					<include name="tc_EditFulfillmentScreen"></include>
+					<include name="tc_FulfillOrderScreen"></include>
+					<include name="tc_RejectionFulfillmentScreen"></include>
+					<include name="tc_RedeliveryScreen"></include>
+					<include name="tc_FulfillmentAssetCreation"></include>
+					<include name="tc_NavigationOfDealsAndDealSearchPage"></include>
+					<include name="tc_DealSearchResult"></include>
+					<include name="tc_SearchContractNumber"></include>
+					<include name="tc_ModifyPitchList"></include>
+					<include name="tc_DealIncludesFunctionality"></include>
+					<include name="tc_DealExcludesFunctionality"></include>
+				</methods>
+			</class><class name="com.vrudrapati.TS_Global">
+				<methods>
+					<include name="tc_DisplayOfAllChartsOnTheHomePageDashboard"></include>
+					<include name="tc_GlobalSearchFunctionalityWithAProgramId"></include>
+					<include name="tc_LoginOktaFunctionalityOfGPSApplication"></include>
+					<include name="tc_VerifyifRDASHpageloads"></include>
+					<include name="tc_Navigationfromglobalsearchresultstoprogramdetailspage"></include>
+				</methods>
+			</class><class name="com.vrudrapati.TS_GPS_Smoke">
+				<methods>
+					<include name="tc_GPS_SmokeTest_008"></include>
+					<include name="tc_GPS_SmokeTest_007"></include>
+					<include name="tc_GPS_SmokeTest_001"></include>
+					<include name="tc_GPS_SmokeTest_006"></include>
+					<include name="tc_GPS_SmokeTest_005"></include>
+					<include name="tc_GPS_SmokeTest_002"></include>
+					<include name="tc_GPS_SmokeTest_003"></include>
+					<include name="tc_GPS_SmokeTest_009"></include>
+					<include name="tc_GPS_SmokeTest_004"></include>
+					<include name="tc_GPS_SmokeTest_010"></include>
+					<include name="tc_GPS_SmokeTest_012"></include>
+					<include name="tc_GPS_SmokeTest_014"></include>
+				</methods>
+			</class><class name="com.vrudrapati.TS_Programming">
+				<methods>
+					<include name="tc_VerifyOnNetAndOffNetRightsForAProgramWithAllRights"></include>
+					<include name="tc_VerifyPackageManagement"></include>
+					<include name="tc_VerifyPackageManagementSearch"></include>
+					<include name="tc_VerifyProgramSearchForScreenersPageSearch"></include>
+					<include name="tc_verifyProgramSearchForImagesSearchPage"></include>
+					<include name="tc_ImageInProgramDetailsPage"></include>
+					<include name="tc_AbilityToDownloadSupportingDocumentsFromGPS"></include>
+					<include name="tc_VerifyForAccuracyOfOrderStatusInTheOrdersTab"></include>
+					<include name="tc_VerifyIfInactiveProgramsAppearInProgramSearchScreen"></include>
+					<include name="tc_VerifyIfReleaseStatusOfAProgramIsSavedOnUpdating"></include>
+					<include name="tc_DisplayOfATerritoryThatExcludesWhenThereAreNoRightsForATerritory"></include>
+					<include name="tc_VerifyAProgramCanBePlacedInInternationalHoldOnUpdatingItFromEditProgramScreen"></include>
+					<include name="tc_VerifyOnNetAndOffNetRightsForAProgramWhichHasOnlyOnNetRightsAndViceVersa"></include>
+					<include name="tc_ProgramSearchPageInProgrammingOption"></include>
+					<include name="tc_SearchResultsViewDisplaysInListView"></include>
+					<include name="tc_RightsTabWhenTheProgramHasAllRights"></include>
+					<include name="tc_RightsAcquiredAndRightsNotAcquiredCountWhenAProgramHasAllRights"></include>
+					<include name="tc_DisplayOfTheProgramsThatHasRightsForAllTerritories"></include>
+					<include name="tc_DisplayOfAProgramHasOnlyFewRights"></include>
+					<include name="tc_SearchResultsViewInProgramSearchPageForASeries"></include>
+					<include name="tc_VerifyCreationOnNewPackageAndDisplayOfTheSameInSalesSite"></include>
+				</methods>
+			</class><class name="com.vrudrapati.TS_Reports">
+				<methods>
+					<include name="tc_NavigationToNewProgramsReleaseReport"></include>
+					<include name="tc_VerifyReportDownload_ProgramReleaseReport"></include>
+					<include name="tc_NavigationToEpisodeLicenseReport"></include>
+					<include name="tc_TakeHoldPassReport"></include>
+					<include name="tc_SalesSummaryReport"></include>
+					<include name="tc_VerifyFactualCategoriesAndCollectionsReport"></include>
+					<include name="tc_VerifyOpenOrdersReport"></include>
+					<include name="tc_VerifyFulfillmentPowerReport"></include>
+					<include name="tc_VerifyProgramPowerReport"></include>
+					<include name="tc_VerifyOrderSalesReport"></include>
+					<include name="tc_SalesSummaryReportDownload_TerritoryItaly"></include>
+					<include name="tc_SalesSummaryReportDownload_ChannelItalyHistory"></include>
+					<include name="tc_VerifyNewOrderStatusIsUpdatedInSalesSummaryReport"></include>
+					<include name="tc_VerifyOpenOrdersReportForASeriesDownload"></include>
+					<include name="tc_VerifyFulfillmentRejectionReportDownload_Channel"></include>
+					<include name="tc_VerifyContentInventoryReportDownload_Territory"></include>
+					<include name="tc_MissingProgramsMaterialsReportDownload"></include>
+					<include name="tc_DealDNAReportDownload"></include>
+					<include name="tc_VerifyOpenOrdersReportForAChannelItalyHistoryDownload"></include>
+					<include name="tc_VerifyContentAndSalesInventoryReport"></include>
+					<include name="tc_MinimumRequirementsSearchForDealOffer"></include>
+					<include name="tc_VerifyProgramPowerReport_ReleaseDateFilterDownload"></include>
+					<include name="tc_VerifyFulfillmentReportForItalyTerritoryDownload"></include>
+					<include name="tc_VerifyOrderSalesReport_ItalyTerritoryDownload"></include>
+					<include name="tc_TieredPricingAsAnOptionInTieredPricingScreen"></include>
+					<include name="tc_GlobalReleaseDateUpdation"></include>
+					<include name="tc_InterimReleaseDateUpdation"></include>
+					<include name="tc_ViewOfAvailableProgramsForDealOffer"></include>
+					<include name="tc_SaveNewSearchCriteriaForDealOffer"></include>
+					<include name="tc_ModifyExistingSavedSearchCriteriaForDealOffer"></include>
+					<include name="tc_ExportPitchList"></include>
+					<include name="tc_verifyrunthefulfillmentreportusingnewlyaddedolumns"></include>
+					<include name="tc_RuntheContentandSalesInventoryReportwhenProgramIDfieldisgiven"></include>
+					<include name="tc_USPremiereDateReleaseDatefieldsdisplaysinESTformatinUIProgramSearchforImagesandUTCformat"></include>
+					<include name="tc_SortingtheStandardreportsalphabetically"></include>
+					<include name="tc_VerifyAddNewTerritoryfiltertoLanguageReport"></include>
+					<include name="tc_WhenUserselectsalanguageforwhichadialectisapplicable"></include>
+					<include name="tc_ReleaseDateCreatedDateUpdatedDateExpiryDateConferenceDateFieldsinPiecetabledisplayUTCformat"></include>
+					<include name="tc_VerifyAllSeriesshouldbethedefaultsearchcriteriaforimagereport"></include>
+					<include name="tc_VerifyAllSeriesshouldbethedefaultsearchcriteriaforimagereportexport"></include>
+					<include name="tc_VerifyAllSeriesshouldbethedefaultsearchcriteriaforimagereportexportresults"></include>
+					<include name="tc_VerifyWhenUserselectsalanguageforwhichadialectisapplicabletheANDlogicapplies"></include>
+					<include name="tc_USPremiereDateReleaseDatefieldsinESTandUTCformat"></include>
+					<include name="tc_TargetShipDateLicenseStartDateOrderDateUSPremierDatefieldsinUIEditforFulfillmentscreen"></include>
+					<include name="tc_ContractEndDateSatelliteEndofLifefieldsinClientProfileDetailsscreen"></include>
+					<include name="tc_CheckLowestchildrightsgetrolledupwhenallchildsofleastparentsold"></include>
+					<include name="tc_CheckLowestchildrightsgetrolledupwhenallchildsofleastparentnotsold"></include>
+					<include name="tc_VerifytheMinExpdateinDealDNAReportthroughterritorywhenParentterritoryhasmultiplechildterritories"></include>
+					<include name="tc_VerifyRemovinginSalessiteURLinDealofferprogramlevelexports"></include>
+					<include name="tc_LastRunDateinUIReportspageandinBackend"></include>
+					<include name="tc_VerifyTargetShipDateLicenseStartDateOrderDateUSPremierDatefieldsinUI"></include>
+					<include name="tc_VerifyResultfetchingforFrenchlanguageinLanguageAssetReport"></include>
+					<include name="tc_VerifywhenintlpiecemadeinactiveinPPL"></include>
+					<include name="tc_Keywordsfiltersearchatleastoneword"></include>
+				</methods>
+			</class><class name="com.vrudrapati.TS_Bridge">
+				<methods>
+					<include name="tc_verifynewAccountCreation"></include>
+					<include name="tc_ProjecectionSmoketestcases"></include>
+					<include name="tc_PendingSmokeCases"></include>
+					<include name="tc_upfsmoketestcases"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
