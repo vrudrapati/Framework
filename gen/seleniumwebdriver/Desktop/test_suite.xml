@@ -1,0 +1,199 @@
+<!--Test_suite xml for running testng test-->
+<suite name="google" verbose="3">
+	<parameter name="selenium.host" value="localhost"></parameter>
+	<parameter name="selenium.port" value="4444"></parameter>
+	<parameter name="selenium.browser" value="*googleChrome"></parameter>
+	<parameter name="selenium.url" value="http://www.google.com"></parameter>
+	<test name="name2" preserve-order="true">
+		<classes><class name="com.desktop.TS_Login">
+				<methods>
+					<include name="tc_VerificationOfLogin"></include>
+					<include name="tc_ResetPasswordFromChangePasswordLink"></include>
+				</methods>
+			</class><class name="com.desktop.TS_Catalogue">
+				<methods>
+					<include name="tc_VerificationOfCataloguePage"></include>
+					<include name="tc_VerificationOfExportButtonInCataloguePage"></include>
+					<include name="tc_AddToCartFunctionality"></include>
+					<include name="tc_SeriesDetailsPageScreener"></include>
+					<include name="tc_SeriesDetailsPageUI"></include>
+					<include name="tc_ImagesVerification"></include>
+					<include name="tc_SeasonDetailsPageUI"></include>
+					<include name="tc_DownloadTheSupportDocuments"></include>
+					<include name="tc_SeriesDetailsPageAddAllEpisodesToCart"></include>
+					<include name="tc_SeasonDetailsPageScreener"></include>
+					<include name="tc_SeriesDetailsPageExport"></include>
+					<include name="tc_SeasonDetailsPageAddAllEpisodesToCart"></include>
+					<include name="tc_OrdersPlaceOrder"></include>
+					<include name="tc_CatalogueDetailsPageScreener"></include>
+					<include name="tc_CatalogueDetailsPageProductionSectionSupportDocs"></include>
+					<include name="tc_CatalogueDetailsPageThumbAndLetterImageVerification"></include>
+					<include name="tc_OrdersCartVarification"></include>
+					<include name="tc_OrdersDeleteOrder"></include>
+					<include name="tc_TermYearSelectionAndPopUpMessageVerification"></include>
+					<include name="tc_SearchWithSeriesTitleProgramTitleAndPieceid"></include>
+					<include name="tc_VisuallyDisplaysTheUSPremiereDate"></include>
+					<include name="tc_VerificationOfContinueShoppingButton"></include>
+					<include name="tc_OrderHistoryPageVarification"></include>
+					<include name="tc_VerifyTheOrderbilityForSEPProgramsAtSeriesOrSeasonLevel"></include>
+					<include name="tc_SearchWithFilters"></include>
+					<include name="tc_SeasonDetailsPageExport"></include>
+					<include name="tc_SearchAutoSuggesstionAndSelection"></include>
+					<include name="tc_DisplayingCorrectHoursAndEpisodeInCPS"></include>
+					<include name="tc_TextAndIconAtSeriesLevelWhenProgramsWithContactSalesForStatusAndOrderLocked"></include>
+					<include name="tc_TextAndIconAtSeriesLevelWhenProgramsWithAddToCartAndOrderLocked"></include>
+					<include name="tc_TextAndIconAtSeasonLevelWhenProgramsWithAddToCartAndOrderLocked"></include>
+					<include name="tc_TextAndIconAtSeasonLevelWhenProgramsWithContactSalesForStatusAndOrderLocked"></include>
+					<include name="tc_VerifyTheTextAndIconAtEpisodeLevelWhenProgramWithAddToCart"></include>
+					<include name="tc_VerifyTheOrderbilityForKeyProgramsAtSeriesOrSeasonLevel"></include>
+					<include name="tc_OrderHistoryExport"></include>
+					<include name="tc_OrderHistorySearch"></include>
+					<include name="tc_ChannelPartnerSiteUTCFormatComplianceCataloguePage"></include>
+					<include name="tc_SeriesAKASearch"></include>
+					<include name="tc_VerifyTheTextAndIconAtEpisodeLevelWhenProgramWithContactSalesForStatus"></include>
+					<include name="tc_OrderLockProgramsAreNotAddedIntoCartInSeriesLevel"></include>
+					<include name="tc_OrderLockProgramsAreNotAddedIntoCartInSeasonLevel"></include>
+					<include name="tc_OrderLockProgramsAreNotAddedIntoCartInEpisodeLevel"></include>
+					<include name="tc_ProgramOrderablityDealDNA"></include>
+					<include name="tc_ProgramVisibiltyOnSiteReleaseStatusAndReleaseandDateAndIntlHold"></include>
+					<include name="tc_ProgramIsNotDisplayingOnCPSWhenTheLinearRightsAreExpiredWhenAllLinearRightsEndDate"></include>
+					<include name="tc_ProgramIsNotDisplayingOnCPSWhenTheLinearRightsAreExpiredWhenDigitalRightsEndDate"></include>
+					<include name="tc_ContactsPageUCAFieldVarifications"></include>
+					<include name="tc_ExportingFunctionalityOfProgramsInSeriesLevel"></include>
+					<include name="tc_ExportingFunctionalityOfProgramsInEpisodeLevel"></include>
+					<include name="tc_ImageScalingInSeriesListingPage"></include>
+					<include name="tc_ImageScalingForSingleEpisode"></include>
+					<include name="tc_ImageScalingInSeasonListingPage"></include>
+					<include name="tc_ImageScalingInEpisodeListingPage"></include>
+					<include name="tc_DefaultImageWithUpdatedURLINCatalogueSeriesListingPage"></include>
+					<include name="tc_DefaultImageWithUpdatedURLINCatalogueEpisodeListingPage"></include>
+					<include name="tc_DefaultImageWithUpdatedURLINCatalogueSeasonListingPage"></include>
+					<include name="tc_DefaultImageWithUpdatedURLINCatalogueSeriesDetailsPage"></include>
+					<include name="tc_DefaultImageWithUpdatedURLINCatalogueEpisodeDetailsPage"></include>
+				</methods>
+			</class><class name="com.desktop.TS_Common">
+				<methods>
+					<include name="tc_VerifyTermsofUselink"></include>
+					<include name="tc_VerifyGDPRTopPageBanner"></include>
+					<include name="tc_VerifyClickhereLinkInGDPRPageBanner"></include>
+					<include name="tc_CPSLastLoginDate"></include>
+				</methods>
+			</class><class name="com.desktop.TS_CPS_Phase2">
+				<methods>
+					<include name="tc_VerifyingTheResultsInCataloguePage"></include>
+					<include name="tc_VerifytTheAssetDocumentsDownload"></include>
+					<include name="tc_CataloguePageVerifyingTheAllFilters"></include>
+					<include name="tc_SelectingSeriesFromAutoSuggestionInCatalogueSearch"></include>
+					<include name="tc_VerifySearchResultsInSeriesTabEpisodeTab"></include>
+					<include name="tc_NonLinerProgramsShouldNotDisplay"></include>
+					<include name="tc_VerifyTheFunctionalityOfSalesSiteLink"></include>
+					<include name="tc_VerifyingDisplayingEpisodedDetailsPage"></include>
+					<include name="tc_CataloguePageVerifyingTheCatalogueReleaseFilter"></include>
+					<include name="tc_VerifyDataInDMCShipmentDateColumnInExportedExcel"></include>
+					<include name="tc_VerifyKEYARTPREVIEWlinkfunctionalityinSeriesDetailspage_GPS"></include>
+				</methods>
+			</class><class name="com.desktop.TS_Asset">
+				<methods>
+					<include name="tc_AssetsDownload"></include>
+					<include name="tc_AssetsSearchWithFilters"></include>
+					<include name="tc_AssetsSearchWithSeriesTitleAndProgramAndTitleAndPieceId"></include>
+					<include name="tc_VerifyTheAssetsCountForSearchedSeries"></include>
+					<include name="tc_AddTheAbilityToVerifyDownloadedMultipleSupportDocs"></include>
+					<include name="tc_AddTheAbilityToViewBulkDownloadSupportDocs"></include>
+					<include name="tc_SortingOfAssetsInAssetsPage"></include>
+					<include name="tc_SearchFunctionalityOnTheAssetPageWhenSearchedWithSeriesTitle"></include>
+					<include name="tc_SearchFunctionalityOnTheAssetPageWhenSearchedWithEpisodesTitle"></include>
+					<include name="tc_SearchFunctionalityOnTheAssetPageWithTheEpisodeID"></include>
+					<include name="tc_AssetEColumnShouldNotDisplay"></include>
+					<include name="tc_SeriesNameShouldDisplayOnAssetEColumn"></include>
+					<include name="tc_DownloadFunctionalityInSeriesPage"></include>
+					<include name="tc_DownloadFunctionalityInSeasonPage"></include>
+					<include name="tc_DownloadFunctionalityInEpisodesPage"></include>
+					<include name="tc_DownloadFunctionalityInOrdersPage"></include>
+				</methods>
+			</class><class name="com.desktop.TS_Orders">
+				<methods>
+					<include name="tc_ExpiredTitlesInOrderHistoryPage"></include>
+					<include name="tc_ExpiredTitlesInOrderHistoryExportedExcel"></include>
+					<include name="tc_VerifyEntriesInPublisherTableForTVTDMC"></include>
+					<include name="tc_VerifyEntriesInPublisherTableForNonTVTDMC"></include>
+				</methods>
+			</class><class name="com.desktop.TS_CPS_Phase3">
+				<methods>
+					<include name="tc_VerifyKEYARTPREVIEWlinkfunctionalityinSeriesDetailspage_GPS"></include>
+					<include name="tc_VerifyKEYARTPREVIEWlinkURLinSeriesDetailsPage_GPS"></include>
+					<include name="tc_VerifyKEYARTPREVIEWDownloadlinkfunctionalityinSeriesDetailspage_GPS"></include>
+					<include name="tc_VerifyKEYARTPREVIEWClosexlinkfunctionalityofoverlaypopupinSeriesDetailspage_GPS"></include>
+					<include name="tc_VerifyKEYARTDOWNLOADlinkfunctionalityinSeriesDetailspage_GPS"></include>
+					<include name="tc_VerifymultipleKEYARTPREVIEWlinksfunctionalityinSeriesDetailspage_GPS"></include>
+					<include name="tc_VerifymultipleKEYARTPREVIEWlinksfunctionalityinSeasonDetailspage_GPS"></include>
+					<include name="tc_VerifymultipleKEYARTDOWNLOADlinksfunctionalityinEpisodeDetailspage_GPS"></include>
+					<include name="tc_VerifymultipleKEYARTDOWNLOADlinksfunctionalityinSeriesDetailspage_GPS"></include>
+					<include name="tc_VerifymultipleKEYARTDOWNLOADlinksfunctionalityinSeasonDetailspage_GPS"></include>
+					<include name="tc_VerifywhetherProductionlinkisaddedtoSeriesdetailspagewhenuploadedaKeyArtPreviewDownload_GPS"></include>
+					<include name="tc_VerifywhetherProductionlinkisaddedtoSeasondetailspagewhenuploadedaKeyArtPreviewDownload_GPS"></include>
+					<include name="tc_VerifywhetherProductionlinkisaddedtoEpisodedetailspagewhenuploadedaKeyArtPreviewDownload_GPS"></include>
+					<include name="tc_VerifywhetherProductionlinkisnotdisplayedinSeriesdetailspagewhennoKeyArtImagesDownloaduploaded"></include>
+					<include name="tc_VerifywhetherProductionlinkisnotdisplayedinSeasondetailspagewhennoKeyArtImagesDownloaduploaded"></include>
+					<include name="tc_VerifyKEYARTPREVIEWlinkfunctionalityinSeriesDetailspage_CPS"></include>
+					<include name="tc_VerifyKEYARTPREVIEWClosexlinkfunctionalityofoverlaypopupinSeriesDetailspage_CPS"></include>
+					<include name="tc_VerifyKEYARTPREVIEWDownloadlinkfunctionalityinSeriesDetailspage_CPS"></include>
+					<include name="tc_VerifyKEYARTDOWNLOADlinkfunctionalityinSeriesDetailspage_CPS"></include>
+					<include name="tc_VerifymultipleKEYARTPREVIEWlinksfunctionalityinSeriesDetailspage_CPS"></include>
+					<include name="tc_VerifymultipleKEYARTPREVIEWlinksfunctionalityinSeasonDetailspage_CPS"></include>
+					<include name="tc_VerifymultipleKEYARTDOWNLOADlinksfunctionalityinEpisodeDetailspage_CPS"></include>
+					<include name="tc_VerifymultipleKEYARTDOWNLOADlinksfunctionalityinSeriesDetailspage_CPS"></include>
+					<include name="tc_VerifymultipleKEYARTDOWNLOADlinksfunctionalityinSeasonDetailspage_CPS"></include>
+					<include name="tc_VerifyKEYARTDOWNLOADlinkfunctionalityinEpisodeDetailspage_CPS"></include>
+					<include name="tc_VerifywhetherProductionlinkisaddedtoSeriesdetailspagewhenuploadedaKeyArtPreviewDownload_CPS"></include>
+					<include name="tc_VerifywhetherProductionlinkisaddedtoSeasondetailspagewhenuploadedaKeyArtPreviewDownload_CPS"></include>
+					<include name="tc_VerifywhetherProductionlinkisaddedtoEpisodedetailspagewhenuploadedaKeyArtPreviewDownload_CPS"></include>
+					<include name="tc_VerifyKEYARTDOWNLOADlinkfunctionalityinEpisodeDetailspage_GPS"></include>
+					<include name="tc_VerifyKEYARTPREVIEWURLinpreviewoverlaypopupatSerieslevel_GPS"></include>
+					<include name="tc_VerifyKEYARTDOWNLOADlinkURLinSeriesDetailspage_GPS"></include>
+					<include name="tc_VerifyKEYARTDOWNLOADlinkURLinEpisodeDetailspage_GPS"></include>
+					<include name="tc_VerifyKEYARTPREVIEWlinkURLinSeriesDetailsPage_CPS"></include>
+					<include name="tc_VerifyKEYARTPREVIEWURLinpreviewoverlaypopupatSerieslevel_CPS"></include>
+					<include name="tc_VerifyKEYARTDOWNLOADlinkURLinSeriesDetailspage_CPS"></include>
+					<include name="tc_VerifyKEYARTDOWNLOADlinkURLinEpisodeDetailspage_CPS"></include>
+					<include name="tc_VerifywhethertheuserisabletodownloadtheLetterimages"></include>
+					<include name="tc_VerifyuserisabletoseetheKeyArtPreviewimagesinprogram_GPS"></include>
+					<include name="tc_VerifyuserisabletodownloadKeyArtPreviewimagesfromprogram_GPS"></include>
+					<include name="tc_VerifyuserisabletoseetheKeyArtPreviewimagesinprogram_CPS"></include>
+					<include name="tc_VerifyuserisabletodownloadKeyArtPreviewimagesfromprogram_CPS"></include>
+					<include name="tc_Checkwhetherusercanloginifaccountsettoinactive"></include>
+					<include name="tc_CheckwhetheruserabletoorderseasonswithstatusContactsalesstatusseasondetails"></include>
+					<include name="tc_CheckwhetheruserabletoorderepisodeswithstatusasContactsalesstatusepisodedetail"></include>
+					<include name="tc_CheckwhetheruserabletoorderepisodeswithstatusContactsalesforstatusepisodelevel"></include>
+					<include name="tc_CheckIconandpopupofStatusContactsalesforstatus"></include>
+					<include name="tc_CheckwhetheruserabletoorderSeasonevensomeofepisodesinseasonContactsalesstatus"></include>
+					<include name="tc_CheckuserabletoorderseriesevensomeseasonsinseriesstatusContactsalesforstatus"></include>
+					<include name="tc_VerifyusernavigatedtoSScontactspageclickedonlinkgivenContactforsalesstatuspopup"></include>
+					<include name="tc_SeriesstatusshouldnotContactSalesforStatustriedtoorderindifferentorderterritory"></include>
+					<include name="tc_ValidateifseasonepisodesotherthanContactsalesforstatusareaddedtocart"></include>
+					<include name="tc_ValidateifseriesseasonsotherthanContactsalesforstatusareaddedtocart"></include>
+					<include name="tc_VerifyupdatedstatusContactsalesforstatusexistingseriesthatbelongedInNegotiationdealGPS"></include>
+					<include name="tc_VerifyupdatedstatusContactsalesforstatusexistingseasonsthatbelongedInNegotiationdealGPS"></include>
+					<include name="tc_VerifyupdatedstatusContactsalesforstatusexistingEpisodesbelongedInNegotiationdealGPS"></include>
+					<include name="tc_VerifySeriesstatusSeriesofCPODDealterritoryrightsmatchanyofnegotiationDealorderterritoryright"></include>
+					<include name="tc_VerifyupdatestatusContactsalesforstatusprogramanychannelandterritoryselectAllInNegotiationDeal"></include>
+					<include name="tc_VerifyupdatedstatusContactsalesforstatusexistingseriesthatbelongedInNegotiationdealGPS_CPS"></include>
+					<include name="tc_VerifyupdatedstatusContactsalesforstatusexistingseasonsthatbelongedInNegotiationdealGPS_CPS"></include>
+					<include name="tc_VerifyupdatedstatusContactsalesforstatusexistingEpisodesbelongedInNegotiationdealGPS_CPS"></include>
+					<include name="tc_VerifyupdatestatusContactsalesforstatusprogramanychannelandterritoryselectAllInNegotiationDeal_CPS"></include>
+					<include name="tc_VerifythePricingcolumnsareaddedtoOrderexport"></include>
+					<include name="tc_SolarRefresh"></include>
+					<include name="tc_VerifythePricingcolumnsarefetchingcorrectdata"></include>
+					<include name="tc_Verifyserieslevelstatuswhenallepisodesareinorderlocked"></include>
+					<include name="tc_ChecktheTabLogoofCPSapplication"></include>
+					<include name="tc_Verifyseasonlevelstatuswhenallepisodesareinorderlocked"></include>
+					<include name="tc_VerifyserieslevelstatuswhenallepisodesareinSEP"></include>
+					<include name="tc_VerifyseasonlevelstatuswhenallepisodesareinSEP"></include>
+					<include name="tc_VerifyserieslevelstatuswhenallepisodesareinKEY"></include>
+					<include name="tc_VerifyseasonlevelstatuswhenallepisodesareinKEY"></include>
+					<include name="tc_Verifystatusepisodeissameinseriesseasonepisodelevelpages"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
